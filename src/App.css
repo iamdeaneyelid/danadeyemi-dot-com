@@ -1,0 +1,38 @@
+
+
+.App {
+  margin: 2%;
+}
+
+.App-header {
+  display: block;
+  width: 250px;
+  text-align: left;
+} 
+
+.App-title {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  cursor: wait;
+}
+
+.App-tagline {
+  margin-top: 5px;
+  padding: 0;
+  letter-spacing: 0.05rem;
+  cursor: wait;
+}
+
+.App-link {
+  display: block;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: #1F1D23;
+}
+
+.App-link+.App-link {
+  margin-top: 5px;
+}
