@@ -15,7 +15,7 @@ class App extends Component {
           <a href="mailto:info@danadeyemi.com" className="App-link App-email">Email</a>
         </div>
         <div className="App-footer">
-          <a href="/src/files/dan-adeyemi-cv.pdf" className="App-link App-cv" target="_blank">CV</a>
+          <a href="https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/dan-adeyemi-cv.pdf" className="App-link App-cv" target="_blank">CV</a>
         </div> 
       </div>
     );
