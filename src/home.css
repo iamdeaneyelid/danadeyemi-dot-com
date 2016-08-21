@@ -1,16 +1,15 @@
 
-
-.App {
+.home {
   margin: 2%;
 }
 
-.App-header {
+.home-header {
   display: block;
   width: 250px;
   text-align: left;
 } 
 
-.App-title {
+.home-title {
   margin: 0;
   padding: 0;
   font-size: 2em;
@@ -19,27 +18,27 @@
   cursor: wait;
 }
 
-.App-tagline {
+.home-tagline {
   margin-top: 0;
   padding: 0;
   letter-spacing: 0.05rem;
   cursor: wait;
 }
 
-.App-link {
+.home-link {
   display: block;
   letter-spacing: 0.05rem;
   text-decoration: none;
   color: #1F1D23;
 }
 
-.App-footer {
+.home-footer {
   position: absolute;
   bottom: 25px;
   border: 5px #1F1D23 solid;
   padding: 5px;
 }
 
-.App-link+.App-link {
+.home-link+.home-link {
   margin-top: 5px;
 }
