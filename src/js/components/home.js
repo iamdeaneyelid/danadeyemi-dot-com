@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import '../../home.css';
 
 class Home extends Component {
+
+  constructor(props) {
+    super()
+    this.props = props
+    this.state = {
+      propsRecieved: false,
+    }
+  }
+
+  componentWillReceiveProps(nextProps){
+    this.setState({
+      propsRecieved: true
+    })
+  }
+
+
   render() {
     return (
       <div className="home">
@@ -10,8 +26,16 @@ class Home extends Component {
           <p className="home-tagline">Creative Technologist Specialising in all things digital</p>
 
           <p className="home-projects">Projects</p>
-          <a href="/project/test" className="home-link-project home-test  ">test</a>
-          <a href="/project/project" className="home-link-project home-test">test2</a>
+
+
+          {
+            this.props.projects.map(function(project) {
+              return(
+                <a key={project.sys.id} href={'/project/' + project.fields.slug} className="home-link-project home-test">{project.fields.title}</a>
+              )
+            })
+          }
+
         </div>
         <div className="home-footer">
           <a href="https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/dan-adeyemi-cv.pdf" className="home-link home-cv" target="_blank">CV</a>
