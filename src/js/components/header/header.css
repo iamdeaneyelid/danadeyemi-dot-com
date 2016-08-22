@@ -1,0 +1,23 @@
+.header {
+  display: block;
+  width: 250px;
+  text-align: left;
+} 
+
+.header-title {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  cursor: wait;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-tagline {
+  margin-top: 0;
+  padding: 0;
+  letter-spacing: 0.05rem;
+  cursor: wait;
+}

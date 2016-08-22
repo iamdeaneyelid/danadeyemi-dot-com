@@ -1,7 +1,7 @@
 import contentful from 'contentful-agent'
 import React, { Component } from 'react';
-import Project from '../components/project'
-import Home from '../components/home'
+import Project from '../views/project/project'
+import Home from '../views/home/home'
 
 
 var request = contentful({
