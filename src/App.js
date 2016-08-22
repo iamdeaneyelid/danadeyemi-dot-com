@@ -4,7 +4,6 @@ import './js/vendor/analytics.js'
 import home from './js/components/home'
 import routefiler from './js/routes/route-filer'
 import { browserHistory } from 'react-router'
-import contentful from 'contentful'
 
 class App extends Component {
   render() {

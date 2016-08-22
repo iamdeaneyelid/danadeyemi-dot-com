@@ -8,15 +8,17 @@ class Home extends Component {
         <div className="home-header">
           <h2 className="home-title">Dan Adeyemi</h2>
           <p className="home-tagline">Creative Technologist Specialising in all things digital</p>
+
+          <p className="home-projects">Projects</p>
+          <a href="/project/test" className="home-link-project home-test  ">test</a>
+          <a href="/project/project" className="home-link-project home-test">test2</a>
+        </div>
+        <div className="home-footer">
+          <a href="https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/dan-adeyemi-cv.pdf" className="home-link home-cv" target="_blank">CV</a>
           <a href="https://www.instagram.com/iamdeaneyelid/" className="home-link home-instagram" target="_blank">Instagram</a>
           <a href="https://twitter.com/iamdeaneyelid" className="home-link home-twitter" target="_blank">Twitter</a>
           <a href="https://uk.linkedin.com/in/danadeyemi" className="home-link home-twitter" target="_blank">LinkedIn</a>
           <a href="mailto:info@danadeyemi.com" className="home-link home-email">Email</a>
-          <a href="/project/test" className="home-link home-test  ">test</a>
-          <a href="/project/project" className="home-link home-test">test2</a>
-        </div>
-        <div className="home-footer">
-          <a href="https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/dan-adeyemi-cv.pdf" className="home-link home-cv" target="_blank">CV</a>
         </div> 
       </div>
     );

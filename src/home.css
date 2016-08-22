@@ -26,10 +26,21 @@
 }
 
 .home-link {
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: #1F1D23;
+}
+
+.home-link-project {
   display: block;
   letter-spacing: 0.05rem;
   text-decoration: none;
   color: #1F1D23;
+}
+
+.home-cv {
+  margin-right: 10px;
 }
 
 .home-footer {
@@ -40,5 +51,12 @@
 }
 
 .home-link+.home-link {
-  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.home-link-project+.home-link-project {
+  margin-bottom: 5px;
+}
+.home-projects {
+  font-weight: 800;
 }
