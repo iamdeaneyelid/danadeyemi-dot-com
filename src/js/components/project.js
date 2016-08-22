@@ -23,7 +23,17 @@ class Project extends Component {
         <div className="project">
          <h2 className="project-title">{this.props.project.title}</h2> 
          <p className="project-description">{this.props.project.description}</p>
-         <img className="project-headerimage" src={this.props.project.headerImage.fields.file.url} />
+         <img className="project-header-image" src={this.props.project.headerImage.fields.file.url} />
+          {
+            this.props.project.bodyImages.map(function(image) {
+              return(
+                <div className="project-body-image-wrapper">
+                  <img className="project-body-image" src={image.fields.file.url} key={image.sys.id} />
+                  <p className="project-body-image-description">{image.fields.description}</p>
+                </div>  
+              )
+            }.bind(this))
+          }
         </div>
       )
     }else {
