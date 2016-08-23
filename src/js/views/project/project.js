@@ -24,6 +24,7 @@ class Project extends Component {
         <div className="project">
 
           <Header />
+          <Footer />
 
           <h2 className="project-title">{this.props.project.title}</h2> 
           <p className="project-description">{this.props.project.description}</p>
