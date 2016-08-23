@@ -8,9 +8,15 @@ body {
 
 a,p {
   font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.05rem;
 }
 
 a:hover {
   color: #1C0E3B;
 }
 
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
