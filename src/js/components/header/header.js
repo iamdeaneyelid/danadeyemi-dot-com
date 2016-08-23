@@ -12,7 +12,7 @@ class Header extends Component {
     return (
       <div className="header">
         <a href="/" className="header-title">Dan Adeyemi</a>
-        <p className="header-tagline">Creative Technologist Specialising in all things digital</p>
+        <p className="header-tagline">Creative Technologist</p>
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Header from '../../components/header/header'
+import Sidebar from '../../components/sidebar/sidebar'
 import Footer from '../../components/footer/footer'
-import ProjectList from '../../components/projectList/projectList'
 
 import './home.css';
 
@@ -24,14 +23,9 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home">
-      
-        <Header />
-        
-        <ProjectList {...this.props} />
-
-        <Footer />        
-
+      <div className="home clearfix">
+       <Sidebar {...this.props}/>
+       <Footer /> 
       </div>
     );
   }

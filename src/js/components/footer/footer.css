@@ -1,16 +1,35 @@
 .footer {
   position: absolute;
-  bottom: 25px;
-  border: 5px #1F1D23 solid;
-  padding: 5px;
+  bottom: 0;
+  width: 100%;
+  margin-bottom:1%;
 }
 
 .footer-link {
   display: inline-block;
   letter-spacing: 0.05rem;
   text-decoration: none;
-  color: #1F1D23;
+  color: #B7B4BD;
   margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.info-box {
+  border: 1px #1F1D23 solid;
+  padding: 5px;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.info-box-text {
+  color: #1F1D23;
+  margin: 0;
+}
+.social-links {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 2%;
 }
 
 .footer-link+.footer-link {

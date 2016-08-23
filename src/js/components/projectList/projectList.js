@@ -11,7 +11,7 @@ class ProjectList extends Component {
   render() {
     return (
       <div className="project-list">
-        <p className="project-header">Projects</p>
+        <p className="project-header">Work</p>
           {
             this.props.projects.map(function(project) {
               return(

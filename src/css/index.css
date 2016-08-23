@@ -14,3 +14,7 @@ a:hover {
   color: #1C0E3B;
 }
 
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
