@@ -14,12 +14,12 @@
   font-size: 0.8em;
 }
 
-  .info-box {
-    /*  border: 1px #1F1D23 solid;*/  
-    /*  padding: 5px;*/  
-    display: inline-block;
-    margin-left: 2%;
-  }
+.info-box {
+  /*  border: 1px #1F1D23 solid;*/  
+  /*  padding: 5px;*/  
+  display: inline-block;
+  margin-left: 2%;
+}
 
 .info-box-text {
   color: #1F1D23;

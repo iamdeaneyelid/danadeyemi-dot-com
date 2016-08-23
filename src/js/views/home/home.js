@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Sidebar from '../../components/sidebar/sidebar'
-import Footer from '../../components/footer/footer'
-
 import './home.css';
+import Sidebar from '../../components/sidebar/sidebar';
+import Footer from '../../components/footer/footer';
+import HomeCarousel from '../../components/HomeCarousel/HomeCarousel';
 
 class Home extends Component {
 
@@ -25,6 +25,7 @@ class Home extends Component {
     return (
       <div className="home clearfix">
        <Sidebar {...this.props}/>
+       <HomeCarousel {...this.props}/>
        <Footer /> 
       </div>
     );
