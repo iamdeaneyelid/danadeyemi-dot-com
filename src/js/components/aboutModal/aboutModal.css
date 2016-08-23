@@ -1,0 +1,30 @@
+.modal {
+  max-width: 600px;
+  width: 100%!important;
+}
+
+.modal-header {
+  margin: 0px;
+  padding: 2%;
+  font-size: 1em;
+  padding-bottom: 2px;
+}
+
+.modal-date {
+  margin: 2%;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.modal-description-text {
+  margin: 2%;
+  line-height: 1.5;
+}
+
+.cv-link {
+  font-weight: 800;
+  text-decoration: none;
+  color: #1F1D23;
+  line-height: 3;
+  cursor: pointer;
+}
