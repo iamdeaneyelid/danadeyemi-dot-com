@@ -9,15 +9,8 @@ class HomeBody extends Component {
     this.props = props
     this.pubsub_token = ''
     this.state = {
-      propsRecieved: false,
       imageUrl:'https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/meta-home.gif'
     }
-  }
-
-  componentWillReceiveProps(nextProps){
-    this.setState({
-      propsRecieved: true
-    });
   }
 
   componentWillMount() {
@@ -32,15 +25,11 @@ class HomeBody extends Component {
   
 
   render() {
-    if (this.state.propsRecieved === true) {
-        return (
-        <div className="home-body">
-          <img className="home-body-image" src={this.state.imageUrl} alt="dan" />
-        </div>
-      )
-    }else {
-      return(null)
-    }   
+      return (
+      <div className="home-body">
+        <img className="home-body-image" src={this.state.imageUrl} alt="dan" />
+      </div>
+    )
   }
 }
 
