@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Router, Route } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 import './js/vendor/analytics.js'
 import router from './js/routes/router'
-import { browserHistory } from 'react-router'
 
 class App extends Component {
   render() {
