@@ -9,9 +9,18 @@ class ProjectList extends Component {
     this.props = props
   }
 
-  triggerImage = (event) => {
+  setLinkImage = (event) => {
     if (this.props.home === true) {
       let imageUrl = event.target.getAttribute('data-project-image')
+      pubsub.publish('images', imageUrl);
+    }else{
+      return null;
+    }
+  }
+  
+  setDefaultImage = (event) => {
+    if (this.props.home === true) {
+      let imageUrl = 'https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/meta-home.gif'
       pubsub.publish('images', imageUrl);
     }else{
       return null;
@@ -25,7 +34,7 @@ class ProjectList extends Component {
           {
             this.props.projects.map(function(project) {
               return(
-                <a key={project.sys.id} href={'/project/' + project.fields.slug} className="project-link" data-project-image={project.fields.featuredImage.fields.file.url} onMouseOver={this.triggerImage}>{project.fields.title}</a>
+                <a key={project.sys.id} href={'/project/' + project.fields.slug} className="project-link" data-project-image={project.fields.featuredImage.fields.file.url} onMouseEnter={this.setLinkImage} onMouseLeave={this.setDefaultImage}>{project.fields.title}</a>
               )
             }.bind(this))
           }
