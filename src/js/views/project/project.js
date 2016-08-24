@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './project.css';
 import Sidebar from '../../components/sidebar/sidebar'
 import Footer from '../../components/footer/footer'
 import ProjectBody from '../../components/projectBody/projectBody'

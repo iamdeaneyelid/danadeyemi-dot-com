@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './projectBody.css'
   
 class ProjectBody extends Component {
 
@@ -20,10 +21,12 @@ class ProjectBody extends Component {
         if (this.state.propsRecieved === true) {
         return (
         <div className="project-body">
-          <h2 className="project-title">{this.props.project.title}</h2> 
-          <p className="project-description">{this.props.project.description}</p>
-          <img className="project-header-image" src={this.props.project.headerImage.fields.file.url} alt={this.props.project.headerImage.fields.description} />
-
+          <div className="project-body-header">
+            <h2 className="project-title">{this.props.project.title}</h2> 
+            <p className="project-description">{this.props.project.description}</p>
+            <button type="button" className="project-description-scroll">Scroll to content</button>
+          </div>  
+          <div className="project-body-images">
           {
             this.props.project.bodyImages.map(function(image) {
               return(
@@ -34,6 +37,7 @@ class ProjectBody extends Component {
               )
             })
           }
+         </div> 
         </div>
       )
     }else {
