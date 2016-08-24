@@ -21,8 +21,8 @@
   margin: 0;
 }
 
-.project-descripton {
-  margin: 5px 0 0 0;
+.project-description {
+  margin-top: 5px;
 }
 
 .project-body-images {
@@ -32,6 +32,12 @@
 
 .project-body-image {
   width: 100%;
+}
+
+.project-body-image-description {
+  margin-top: 0px;
+  text-align: center;
+  font-style: italic;
 }
 
 .project-description-scroll {
@@ -49,4 +55,6 @@
     bottom: 2%;
     width: 50px;
     margin-top: 50%;
+    outline: 0;
+    cursor: pointer;
 }

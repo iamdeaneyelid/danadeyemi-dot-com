@@ -9,9 +9,14 @@ class ProjectList extends Component {
   }
 
   triggerImage = (event) => {
-    let imageUrl = event.target.getAttribute('data-project-image')
-    console.log('event', imageUrl)
+    if (this.props.home === true) {
+      let imageUrl = event.target.getAttribute('data-project-image')
+      console.log('event', imageUrl)
+    }else{
+      return null;
+    }
   }
+
 
   render() {
     return (
