@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './sidebar.css';
 import Header from '../header/header'
 import ProjectList from '../projectList/projectList'
-import Footer from '../footer/footer'
-
-
 
 class Sidebar extends Component {
 
