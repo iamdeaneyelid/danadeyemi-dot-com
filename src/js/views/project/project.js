@@ -25,7 +25,7 @@ class Project extends Component {
       return (
         <div className="project">
           <Sidebar {...this.props} />
-          // <ProjectBody {...this.props} />
+          <ProjectBody {...this.props} />
           <Footer />          
 
         </div>

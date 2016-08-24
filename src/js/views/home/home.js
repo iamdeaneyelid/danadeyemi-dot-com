@@ -24,7 +24,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home clearfix">
-       <Sidebar {...this.props}/>
+       <Sidebar {...this.props} home={true}/>
        <Footer /> 
       </div>
     );
