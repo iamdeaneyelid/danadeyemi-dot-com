@@ -5,8 +5,19 @@ class ProjectBody extends Component {
   constructor(props) {
     super()
     this.props = props
+    this.state = {
+      propsRecieved: false,
+    }
   }
+
+  componentWillReceiveProps(nextProps){
+    this.setState({
+      propsRecieved: true
+    })
+  }
+
   render() {
+        if (this.state.propsRecieved === true) {
         return (
         <div className="project-body">
           <h2 className="project-title">{this.props.project.title}</h2> 
@@ -25,6 +36,9 @@ class ProjectBody extends Component {
           }
         </div>
       )
+    }else {
+      return(null)
+    }   
   }
 }
 
