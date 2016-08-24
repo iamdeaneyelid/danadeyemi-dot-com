@@ -10,7 +10,7 @@ class HomeBody extends Component {
     this.pubsub_token = ''
     this.state = {
       propsRecieved: false,
-      selection:'https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png'
+      imageUrl:'https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/meta-home.gif'
     }
   }
 
@@ -21,13 +21,8 @@ class HomeBody extends Component {
   }
 
   componentWillMount() {
-    console.log('mounted')
-    // when React renders me, I subscribe to the topic 'products'
-    // .subscribe returns a unique token necessary to unsubscribe
-    this.pubsub_token = pubsub.subscribe('products', function(topic, product) {
-      console.log('does this fecking work', product)
-      // update my selection when there is a message
-      this.setState({ selection: product });
+    this.pubsub_token = pubsub.subscribe('images', function(topic, image) {
+      this.setState({ imageUrl: image });
     }.bind(this));
   }
 
@@ -40,7 +35,7 @@ class HomeBody extends Component {
     if (this.state.propsRecieved === true) {
         return (
         <div className="home-body">
-          <img className="project-body-image" src={this.state.selection} alt="dan" />
+          <img className="home-body-image" src={this.state.imageUrl} alt="dan" />
         </div>
       )
     }else {

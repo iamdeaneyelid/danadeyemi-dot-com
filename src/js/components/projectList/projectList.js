@@ -12,8 +12,7 @@ class ProjectList extends Component {
   triggerImage = (event) => {
     if (this.props.home === true) {
       let imageUrl = event.target.getAttribute('data-project-image')
-      pubsub.publish('products', imageUrl);
-      console.log('event', imageUrl)
+      pubsub.publish('images', imageUrl);
     }else{
       return null;
     }

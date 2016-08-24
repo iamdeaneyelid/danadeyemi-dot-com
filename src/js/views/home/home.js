@@ -19,8 +19,7 @@ class Home extends Component {
       propsRecieved: true
     })
   }
-
-
+  
   render() {
     return (
       <div className="home clearfix">
