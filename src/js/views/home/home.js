@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import './home.css';
 import Sidebar from '../../components/sidebar/sidebar'
 import Footer from '../../components/footer/footer'
-
-import './home.css';
+import HomeBody from '../../components/homeBody/homeBody'
 
 class Home extends Component {
 
@@ -19,12 +19,12 @@ class Home extends Component {
       propsRecieved: true
     })
   }
-
-
+  
   render() {
     return (
       <div className="home clearfix">
-       <Sidebar {...this.props}/>
+       <Sidebar {...this.props} home={true}/>
+       <HomeBody />
        <Footer /> 
       </div>
     );

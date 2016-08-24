@@ -44,7 +44,7 @@ class Router extends Component {
 
   render() {
     if (this.props.route.path === '/project/:projectSlug') {
-      return (<Project project={this.state.projectData} />);
+      return (<Project project={this.state.projectData} projects={this.state.homeData} />);
     } 
      if (this.props.route.path === '/') {
       return (<Home projects={this.state.homeData} />);
