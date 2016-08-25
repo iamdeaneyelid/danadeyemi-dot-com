@@ -35,7 +35,7 @@ class ProjectList extends Component {
           {
             this.props.projects.map(function(project) {
               return(
-                <Link to={'/project/' + project.fields.slug} key={project.sys.id} className="project-link" activeClassName="active-link" data-project-image={project.fields.featuredImage.fields.file.url} onMouseEnter={this.setLinkImage} onMouseLeave={this.setDefaultImage}>{project.fields.title}</Link>
+                <Link to={'/project/' + project.fields.slug} key={project.sys.id} className="project-link" activeClassName="project-link-active" data-project-image={project.fields.featuredImage.fields.file.url} onMouseEnter={this.setLinkImage} onMouseLeave={this.setDefaultImage}>{project.fields.title}</Link>
               )
             }.bind(this))
           }
