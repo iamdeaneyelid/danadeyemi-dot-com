@@ -17,15 +17,20 @@ class Router extends Component {
   }
 
   componentDidMount() {
-    this.getProjectData()
+    this.getProjectData(this.props.params.projectSlug)
   }
 
-  getProjectData = () => {
+  componentWillReceiveProps(nextProps) {
+    let updatedLink = nextProps.params.projectSlug
+    this.getProjectData(updatedLink)
+  }
+
+  getProjectData = (link) => {
     request.get({
     project: {
       id: 'project',
       filters: {
-        'fields.slug': [this.props.params.projectSlug]
+        'fields.slug': [link]
       }
     }}).then((entries) => {this.setState({projectData:entries.project[0].fields})})
   }
