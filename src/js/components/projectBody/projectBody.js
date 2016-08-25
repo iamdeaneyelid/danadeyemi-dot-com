@@ -30,9 +30,9 @@ class ProjectBody extends Component {
           {
             this.props.project.bodyImages.map(function(image) {
               return(
-                <div className="project-body-image-wrapper">
-                  <img className="project-body-image" src={image.fields.file.url} key={image.sys.id} alt={image.fields.description} />
-                  <p className="project-body-image-description" key={10}>{image.fields.description}</p>
+                <div className="project-body-image-wrapper" key={image.sys.id.slice(9,12)}>
+                  <img className="project-body-image" src={image.fields.file.url} key={image.sys.id.slice(1,4)} alt={image.fields.description} />
+                  <p className="project-body-image-description" key={image.sys.id.slice(5,8)}>{image.fields.description}</p>
                 </div>  
               )
             })
