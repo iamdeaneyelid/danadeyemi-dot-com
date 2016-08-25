@@ -11,6 +11,7 @@ class ProjectList extends Component {
 
   setLinkImage = (event) => {
     if (this.props.home === true) {
+      console.log('image',imageUrl)
       let imageUrl = event.target.getAttribute('data-project-image')
       pubsub.publish('images', imageUrl);
     }else{

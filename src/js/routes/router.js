@@ -22,6 +22,7 @@ class Router extends Component {
   componentDidMount() {
     this.getProjectData()
     this.getHomeData()
+    console.log('this has mounted')
   }
 
   getProjectData = () => {
@@ -47,6 +48,7 @@ class Router extends Component {
       return (<Project project={this.state.projectData} projects={this.state.homeData} />);
     } 
      if (this.props.route.path === '/') {
+      console.log('this is a home')
       return (<Home projects={this.state.homeData} />);
     }   
   }
