@@ -1,8 +1,6 @@
 import contentful from 'contentful-agent'
 import React, { Component } from 'react';
-import Project from '../views/project/project'
-import Home from '../views/home/home'
-
+import ProjectBody from '../components/projectBody/projectBody'
 
 var request = contentful({
   space: '5jz2ccsep5wg',
@@ -14,42 +12,32 @@ class Router extends Component {
     super()
     this.props = props
     this.state = {
-      projectData: [],
-      homeData:[]
+      projectData: []
     }
   }
 
   componentDidMount() {
-    this.getProjectData()
-    this.getHomeData()
+    this.getProjectData(this.props.params.projectSlug)
   }
 
-  getProjectData = () => {
+  componentWillReceiveProps(nextProps) {
+    let updatedLink = nextProps.params.projectSlug
+    this.getProjectData(updatedLink)
+  }
+
+  getProjectData = (link) => {
     request.get({
     project: {
       id: 'project',
       filters: {
-        'fields.slug': [this.props.params.projectSlug]
+        'fields.slug': [link]
       }
     }}).then((entries) => {this.setState({projectData:entries.project[0].fields})})
   }
 
-   getHomeData = () => {
-    request.get({
-    project: {
-      id: 'project'
-    }}).then((entries) => {this.setState({homeData:entries.project})})
-  }
-
-
   render() {
-    if (this.props.route.path === '/project/:projectSlug') {
-      return (<Project project={this.state.projectData} projects={this.state.homeData} />);
-    } 
-     if (this.props.route.path === '/') {
-      return (<Home projects={this.state.homeData} />);
-    }   
-  }
+    return (<ProjectBody project={this.state.projectData}/>);
+  } 
 }
 
 export default Router;
