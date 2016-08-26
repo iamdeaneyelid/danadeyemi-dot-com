@@ -14,6 +14,8 @@
 .project-link-active {
   font-weight: 800;
   font-size: 0.85em;
+  font-style: normal;
+  letter-spacing: 0.08em;
 }
 
 .project-link+.project-link {
@@ -22,6 +24,9 @@
 
 .project-header {
   font-weight: 800;
-  font-size: 0.8em;
+  font-size: 0.85em;
   padding-bottom: 2px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0.08rem;
+  margin: 0
 }

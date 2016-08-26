@@ -13,16 +13,18 @@
   position: relative;
   margin: 100vh auto auto;
   max-width: 400px;
-  text-align: center
+  text-align: center;
 }
 
 .project-title {
   font-size: 1em;
   margin: 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5
 }
 
 .project-description {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .project-body-images {
