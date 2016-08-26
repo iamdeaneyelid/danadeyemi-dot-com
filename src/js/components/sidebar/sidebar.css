@@ -10,3 +10,10 @@
   margin: 2%;
   z-index: 10;
 }
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -28,5 +28,12 @@
   padding-bottom: 2px;
   font-family: 'Work Sans', sans-serif;
   letter-spacing: 0.08rem;
-  margin: 0
+  margin: 0;
+  color: #1F1D23;
+}
+
+@media screen and (max-width: 767px) {
+  .project-list {
+    display: none;
+  }
 }

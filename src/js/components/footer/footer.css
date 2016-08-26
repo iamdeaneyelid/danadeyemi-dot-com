@@ -46,3 +46,13 @@
 .footer-link+.footer-link {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+  .social-links  {
+    float: none;
+    margin-left: 2%;
+  }
+}
