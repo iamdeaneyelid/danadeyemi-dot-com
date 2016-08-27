@@ -21,7 +21,7 @@ class ProjectList extends Component {
   
   setDefaultImage = (event) => {
     if (this.props.home === true) {
-      let imageUrl = 'https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/meta-home.gif'
+      let imageUrl = 'http://iamdeaneyelid.s3.amazonaws.com/dan-3d2.png'
       pubsub.publish('images', imageUrl);
     }else{
       return null;
