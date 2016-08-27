@@ -42,6 +42,10 @@
   font-style: italic;
 }
 
+.project-body-image-wrapper {
+  border: 1px #1F1D23 solid;
+}
+
 .project-description-scroll {
     position: relative; 
     overflow: hidden;
