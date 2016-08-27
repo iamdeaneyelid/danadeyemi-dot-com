@@ -32,13 +32,17 @@
   font-size: 0.8em
 }
 
+.header-mobile-menu-item {
+  margin-left: 0 !important;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 30px;
   height: 20px;
   right: 2%;
-  top: 22px;
+  top: 20px;
 }
 
 /* Color/shape of burger icon bars */
