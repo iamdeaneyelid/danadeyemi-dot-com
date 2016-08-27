@@ -16,6 +16,11 @@
   font-family: 'Work Sans', sans-serif;
   letter-spacing: 0.05rem;
   line-height: 1;
+  transition: all 0.5s ease;
+}
+
+.header-title-active {
+  font-size: 1.05em;
 }
 
 .header-tagline {
