@@ -30,6 +30,7 @@
   letter-spacing: 0.08rem;
   margin: 0;
   color: #1F1D23;
+  cursor: default;
 }
 
 @media screen and (max-width: 767px) {

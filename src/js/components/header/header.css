@@ -27,7 +27,7 @@
   margin-top: 0;
   padding: 0;
   letter-spacing: 0.05rem;
-  cursor: wait;
+  cursor: default;
   color: #1D1B23;
   font-size: 0.8em
 }
