@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sidebar from '../../components/sidebar/sidebar'
 import Footer from '../../components/footer/footer'
 import contentful from 'contentful-agent'
+import EasyTransition from 'react-easy-transition'
 
 var request = contentful({
   space: '5jz2ccsep5wg',
@@ -44,7 +45,14 @@ class MainLayout extends Component {
       <div className="main">
         <Sidebar projects={this.state.homeData} home={this.state.homeLocation}/>
         <main>
-          {this.props.children}
+          <EasyTransition
+          path={location.pathname}
+          initialStyle={{opacity: 0}}
+          transition="opacity 0.25s ease-in"
+          finalStyle={{opacity: 1}}
+          >
+            {this.props.children}
+         </EasyTransition>   
         </main>
         <Footer />
       </div>
