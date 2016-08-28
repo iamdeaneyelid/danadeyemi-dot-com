@@ -48,20 +48,20 @@
 }
 
 .project-description-scroll {
-    position: relative; 
-    overflow: hidden;
-    text-indent: 200%;
-    white-space: nowrap;
-    display: block;
-    background: url('https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/arrow-down.png') 5px no-repeat;
-    transform: translateX(-50%);
-    background-size: contain;
-    background-position: center;
-    border: 0;
-    left: 50%;
-    bottom: 2%;
-    width: 50px;
-    margin-top: 20%;
-    outline: 0;
-    cursor: pointer;
+  position: relative; 
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
+  display: block;
+  background: url('https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/arrow-down.png') 5px no-repeat;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-position: center;
+  border: 0;
+  left: 50%;
+  bottom: 2%;
+  width: 50px;
+  margin-top: 20%;
+  outline: 0;
+  cursor: pointer;
 }
