@@ -86,7 +86,7 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .header {
     width: 96%;
     background-color: #fff;

@@ -9,7 +9,6 @@
 
 .footer-link {
   display: inline-block;
-  letter-spacing: 0.05rem;
   text-decoration: none;
   color: #B7B4BD;
   margin-right: 10px;
@@ -47,7 +46,7 @@
   margin-right: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .footer {
     text-align: center;
   }
