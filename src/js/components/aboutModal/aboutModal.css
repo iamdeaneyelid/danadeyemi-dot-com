@@ -42,7 +42,7 @@
   color: #1F1D23;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .modal-social-links {
     display: inline-block;
   }
