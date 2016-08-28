@@ -44,6 +44,12 @@ class AboutModal extends Component {
                 </p>
               </div>
               <a href="https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/dan-adeyemi-cv.pdf" className="modal-description-text cv-link" target="_blank">CV</a>
+              <div className="modal-social-links">
+                <a href="https://www.instagram.com/iamdeaneyelid/" className="footer-link footer-instagram" target="_blank">Instagram</a>
+                <a href="https://twitter.com/iamdeaneyelid" className="footer-link footer-twitter" target="_blank">Twitter</a>
+                <a href="https://uk.linkedin.com/in/danadeyemi" className="footer-link footer-twitter" target="_blank">LinkedIn</a>
+                <a href="mailto:info@danadeyemi.com?subject=Hi%20Dan" className="footer-link footer-email">Email</a>
+              </div>
           </Modal>
       </div>
     );
