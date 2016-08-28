@@ -54,5 +54,6 @@
   .social-links  {
     float: none;
     margin-left: 2%;
+    display: none;
   }
 }
