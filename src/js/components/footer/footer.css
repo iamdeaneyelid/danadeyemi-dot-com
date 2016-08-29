@@ -50,9 +50,14 @@
   .footer {
     text-align: center;
   }
+
   .social-links  {
     float: none;
     margin-left: 2%;
     display: none;
+  }
+  
+  .info-box {
+    margin-left: 0;
   }
 }
