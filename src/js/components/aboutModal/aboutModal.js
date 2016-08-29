@@ -27,10 +27,11 @@ class AboutModal extends Component {
               <div className="modal-description">
                 <p className="modal-description-text">
                   Dan Adeyemi is a Creative Technologist Based in London with 3+ years experience working
-                  in digital media.
+                  in digital media. 
                 </p>
                  <p className="modal-description-text">
                   Dan is equipped with proficient skills to advise, create and manage digital projects in a creative environment while having a full stack of programming skills.
+                  Currently working full time at Shortlist Media.
                   Previous employers include Dazed Media, Net-A-Porter & WCRS(Apple Account).
                  </p>
                  <p className="modal-description-text">
