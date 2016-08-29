@@ -9,7 +9,7 @@ class HomeBody extends Component {
     this.props = props
     this.pubsub_token = ''
     this.state = {
-      imageUrl:'http://iamdeaneyelid.s3.amazonaws.com/dan-3d2.png'
+      imageUrl:'http://iamdeaneyelid.s3.amazonaws.com/dan-in-3d.png'
     }
   }
 
