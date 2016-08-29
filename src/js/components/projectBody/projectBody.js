@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
+let scroller = Scroll.scroller;
+let Element = Scroll.Element;
+
 import './projectBody.css'
   
 class ProjectBody extends Component {
@@ -17,6 +21,14 @@ class ProjectBody extends Component {
     })
   }
 
+  scrollToImages = () => {
+    scroller.scrollTo('start', {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+    })
+  }
+
   render() {
         if (this.state.propsRecieved === true) {
         return (
@@ -24,9 +36,9 @@ class ProjectBody extends Component {
           <div className="project-body-header">
             <h2 className="project-title">{this.props.project.title}</h2> 
             <p className="project-description">{this.props.project.description}</p>
-            <button type="button" className="project-description-scroll">Scroll to content</button>
+            <button type="button" className="project-description-scroll" onClick={this.scrollToImages}>Scroll to content</button>
           </div>  
-          <div className="project-body-images">
+          <Element name="start" className="project-body-images">
           {
             this.props.project.bodyImages.map(function(image) {
               return(
@@ -36,7 +48,7 @@ class ProjectBody extends Component {
               )
             })
           }
-         </div> 
+         </Element> 
         </div>
       )
     }else {
