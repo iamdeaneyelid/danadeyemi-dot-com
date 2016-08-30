@@ -1,0 +1,74 @@
+.project-body {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  margin-top: 50%;
+}
+
+.project-body-header {
+  position: relative;
+  margin: 100vh auto auto;
+  max-width: 400px;
+  text-align: center;
+  cursor: default;
+}
+
+.project-title {
+  font-size: 1em;
+  margin: 0;
+  letter-spacing: 0.05rem;
+  line-height: 1.5
+}
+
+.project-description {
+  margin-top: 0;
+}
+
+.project-body-images {
+  position: relative;
+  margin-top: 30vh;
+}
+
+.project-body-image {
+  width: 100%;
+}
+
+.project-body-image-description {
+  margin-top: 0px;
+  text-align: center;
+  font-style: italic;
+}
+
+.project-body-image-wrapper {
+  border: 1px #1F1D23 solid;
+}
+
+.project-description-scroll {
+  position: relative; 
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
+  display: block;
+  background: url('https://s3-eu-west-1.amazonaws.com/iamdeaneyelid/arrow-down.png') 5px no-repeat;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-position: center;
+  border: 0;
+  left: 50%;
+  bottom: 2%;
+  width: 50px;
+  margin-top: 20%;
+  outline: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .project-description-scroll {
+    display: none;
+  }
+}

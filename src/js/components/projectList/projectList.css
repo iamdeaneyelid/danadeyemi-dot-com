@@ -1,21 +1,39 @@
-
 .project-link{
   display: block;
   letter-spacing: 0.05rem;
   text-decoration: none;
   color: #1F1D23;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
   font-size: 0.8em;
   margin-left: 5px;
   font-style: italic;
+  transition: all 0.5s ease;
+}
+
+.project-link-active {
+  font-weight: 800;
+  font-size: 0.85em;
+  font-style: normal;
+  letter-spacing: 0.08em;
 }
 
 .project-link+.project-link {
-  margin-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 .project-header {
   font-weight: 800;
-  font-size: 0.8em;
-  margin-bottom: 2px;
+  font-size: 0.85em;
+  padding-bottom: 2px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0.08rem;
+  margin: 0;
+  color: #1F1D23;
+  cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  .project-list {
+    display: none;
+  }
 }

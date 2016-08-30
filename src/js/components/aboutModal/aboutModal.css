@@ -28,4 +28,22 @@
   color: #1F1D23;
   line-height: 3;
   cursor: pointer;
+  letter-spacing: 0.08rem;
+  font-size: 0.85em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.modal-social-links{
+  display: none;
+}
+
+.modal-social-links .footer-link {
+  color: #1F1D23;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-social-links {
+    display: inline-block;
+  }
 }
