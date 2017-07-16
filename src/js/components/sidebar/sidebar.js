@@ -16,14 +16,10 @@ class Sidebar extends Component {
     this.props = props
   }
 
-  closeMenu = () => {
-    Menu.isOpen={false}
-  }
-
   render() {
     return (
       <div className="sidebar">
-        <Menu id={"header-mobile-menu"} right isOpen={false}>
+        <Menu id={"header-mobile-menu"} right >
           <p className="header-mobile-project-header project-header">Work</p>
            {
             this.props.projects.map(function(project) {

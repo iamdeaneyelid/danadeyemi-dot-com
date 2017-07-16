@@ -31,8 +31,8 @@ class AboutModal extends Component {
                 </p>
                  <p className="modal-description-text">
                   Dan is equipped with proficient skills to advise, create and manage digital projects in a creative environment while having a full stack of programming skills.
-                  Currently working full time at Shortlist Media.
-                  Previous employers include Dazed Media, Net-A-Porter & WCRS(Apple Account).
+                  Currently working full time at Condé Nast International.
+                  Previous employers include Dazed Media, Net-A-Porter & Shortlist Media.
                  </p>
                  <p className="modal-description-text">
                   Dan has also done freelance work in Graphic Design, Web Development &amp; Consultancy for various brands.
